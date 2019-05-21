@@ -507,7 +507,6 @@
 	});
 
 	// nav index adaptive menu page
-
 	$('.catalog-nav__item').on('click', function (e) {
 		if (windowWidth <= 960) {
 
@@ -521,8 +520,10 @@
 			if (drop) {
 				if ($(drop).hasClass('drop-nav_show')) {
 					$(drop).removeClass('drop-nav_show');
+					$(this).removeClass('catalog-nav__up');
 				} else if (!$(drop).hasClass('drop-nav__list')) {
 					$(drop).addClass('drop-nav_show');
+					$(this).addClass('catalog-nav__up');
 				} else if ($(e.target).closest('.drop-nav__item:not(.drop-nav__item_group)')[0]) {
 					window.location = link;
 				}
@@ -540,10 +541,13 @@
 
 			if (showing) {
 				$(this).parent().removeClass('drop-nav__list_show');
+				$(this).removeClass('drop-nav__up');
+
 			} else {
 				e.preventDefault();
 				$('.drop-nav__list_show').removeClass('drop-nav__list_show');
 				$(this).parent().addClass('drop-nav__list_show');
+				$(this).addClass('drop-nav__up');
 			}
 		}
 	});
