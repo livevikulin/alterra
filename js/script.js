@@ -541,13 +541,15 @@
 
 			if (showing) {
 				$(this).parent().removeClass('drop-nav__list_show');
-				$(this).removeClass('drop-nav__up');
+				$(this).parent().find('.drop-nav__up').removeClass('drop-nav__up');
 
 			} else {
 				e.preventDefault();
 				$('.drop-nav__list_show').removeClass('drop-nav__list_show');
 				$(this).parent().addClass('drop-nav__list_show');
+				$('.drop-nav__up').removeClass('drop-nav__up');
 				$(this).addClass('drop-nav__up');
+
 			}
 		}
 	});
