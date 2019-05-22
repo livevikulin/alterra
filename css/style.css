@@ -78,7 +78,8 @@ sub {
 }
 
 img {
-    border: 0
+    width: 100%;
+    border: 0;
 }
 
 svg:not(:root) {
@@ -3059,6 +3060,17 @@ td, th {
     font-size: 12px;
     -webkit-transform: none;
     transform: none
+}
+
+.field__input input:focus + .field__placeholder, .field__input input:not(:placeholder-shown) + .field__placeholder {
+    top: -14px;
+    left: 0;
+    font-size: 12px;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
 }
 
 .field__input_textarea {
