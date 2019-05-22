@@ -2603,7 +2603,7 @@ td, th {
 .gallery__list, .gallery__list .owl-stage {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
 }
 
 .gallery__element {
@@ -4728,7 +4728,7 @@ td, th {
 }
 
 .promo {
-    width: 100%
+    width: 100%;
 }
 
 .promo__slider {
@@ -4736,6 +4736,10 @@ td, th {
     padding-bottom: 16px;
     width: 100%;
     overflow: hidden
+}
+
+div[data-slider]:not(.owl-loaded) * {
+    display: none;
 }
 
 .promo__slider .owl-stage {
