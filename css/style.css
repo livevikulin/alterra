@@ -739,14 +739,21 @@ td, th {
     position: absolute;
     top: 50%;
     right: 16px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-top: -8px;
     display: block;
     width: 16px;
     height: 16px;
     content: "";
     background: url(../img/toggle-arrow.svg) no-repeat 50%;
     pointer-events: none
+}
+
+.m-menu__arrow-up:after {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .m-menu__item_next {

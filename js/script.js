@@ -358,6 +358,13 @@
 		$('.m-menu__content').toggle();
 	});
 
+	$('.m-menu__item-wrap').on('click', function(){
+		$(this).toggleClass('m-menu__arrow-up')
+	});
+	$('li[data-counter]').on('click', function(){
+		$(this).toggleClass('m-menu__arrow-up')
+	});
+
 	$('.m-menu__item_drop').on('click', function (e) {
 		e.stopPropagation();
 
