@@ -78,7 +78,6 @@ sub {
 }
 
 img {
-    width: 100%;
     border: 0;
 }
 
@@ -4367,6 +4366,10 @@ td, th {
 
 .category__wrap:hover {
     text-decoration: none
+}
+
+.category__wrap img {
+    width: 100%;
 }
 
 .category__photo {
