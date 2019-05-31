@@ -343,6 +343,21 @@
 		$('.filter').toggle();
 	});
 
+	$('.categories-toggle').on('click', function () {
+		$('.categories .toggle:not(.toggle_close)').trigger('click');
+		$('.categories').toggle();
+	});
+
+	$('.categories__block-head').click(function(){
+		var $catList = $(this).next('.categories-list');
+
+		if($(this).hasClass('toggle_close')){
+			$catList.slideUp('list_close');
+		} else {
+			$catList.slideDown('list_close');
+		};
+	});
+
 	$('.m-menu__toggle').on('click', function () {
 		if (!$('.page').hasClass('page_freeze')) {
 			var h = $('.m-menu__content').height();
