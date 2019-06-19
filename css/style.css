@@ -7765,6 +7765,16 @@ html {
     display: none
 }
 
+.search-scroll {
+    display: none;
+    width: 95%;
+    margin: 14px auto;
+}
+
+.search-scroll__active {
+    display: block;
+}
+
 .fade-bg {
     position: fixed;
     z-index: 999;
@@ -9370,6 +9380,11 @@ input[type=number] {
     }
     .search:hover {
         box-shadow: none
+    }
+    .search-scroll {
+        display: none;
+        width: 95%;
+        margin: 14px auto;
     }
     .search:before {
         position: absolute;
