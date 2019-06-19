@@ -9904,6 +9904,9 @@ input[type=number] {
     .container__back {
         display: block;
     }
+    .categories-list a:hover {
+        color: #0070C9;
+    }
 }
 
 @media (max-width: 500px) {
