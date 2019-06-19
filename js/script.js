@@ -358,6 +358,12 @@
 		};
 	});
 
+	$('.categories-list__down').click(function(){
+		var $dogList = $(this).next('.categories-list__sub');
+		$dogList.slideToggle('sub_close');
+		$(this).toggleClass('sub_down');
+	});
+
 	$('.m-menu__toggle').on('click', function () {
 		if (!$('.page').hasClass('page_freeze')) {
 			var h = $('.m-menu__content').height();
