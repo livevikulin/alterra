@@ -534,6 +534,7 @@
         heightBottomScroll += $(el).height();
     });
 
+    //поиск в бургер-меню
     $(window).scroll(function() {
         if ($(window).scrollTop() > 50) {
             $('.search-scroll').show();

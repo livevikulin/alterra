@@ -7772,7 +7772,7 @@ html {
 }
 
 .search-scroll__active {
-    display: block;
+    display: block !important;
 }
 
 .fade-bg {
